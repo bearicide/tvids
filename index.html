@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07140d">
+<title>Taylor Crick TV</title>
+<style>
+:root{--bg:#07140d;--ink:#f2fff5;--soft:#b8d8bf;--panel:rgba(8,24,14,.82);--line:rgba(148,255,179,.26);--green:#86ff9b;--creek:#5ee7ff;--gold:#ffd86b;--warn:#ff7b7b;--shadow:0 18px 50px rgba(0,0,0,.45)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100svh;background:radial-gradient(circle at 20% 0,rgba(94,231,255,.18),transparent 30%),radial-gradient(circle at 80% 8%,rgba(134,255,155,.18),transparent 26%),linear-gradient(150deg,#07140d,#0b2114 45%,#020503);color:var(--ink);font-family:Bahnschrift,"Arial Narrow",system-ui,sans-serif;line-height:1.45}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 5px),radial-gradient(circle at center,transparent 35%,rgba(0,0,0,.78));mix-blend-mode:screen;opacity:.6}.wrap{position:relative;z-index:1;width:min(1180px,100%);margin:auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0 18px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}.mark{width:46px;height:46px;border:2px solid var(--green);border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(134,255,155,.22),rgba(94,231,255,.12));box-shadow:0 0 28px rgba(134,255,155,.18);font-weight:900}.brand strong{display:block;font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase}.brand span{display:block;color:var(--soft);font-size:.76rem;text-transform:uppercase;letter-spacing:.13em}.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.nav a,.btn,button{border:1px solid var(--line);background:rgba(2,9,5,.72);color:var(--ink);text-decoration:none;padding:10px 12px;border-radius:999px;font:inherit;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;cursor:pointer}.nav a:hover,.btn:hover,button:hover{border-color:var(--green);box-shadow:0 0 20px rgba(134,255,155,.16)}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}.card{border:1px solid var(--line);background:var(--panel);backdrop-filter:blur(10px);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}.intro{padding:clamp(22px,5vw,46px)}.kicker{color:var(--green);text-transform:uppercase;letter-spacing:.2em;font-size:.74rem;margin-bottom:14px}.intro h1{font-size:clamp(3rem,9vw,7.6rem);line-height:.83;margin:0 0 16px;text-transform:uppercase;letter-spacing:.04em;text-shadow:-2px 0 var(--creek),2px 0 rgba(134,255,155,.65),0 0 36px rgba(134,255,155,.18)}.intro p{color:var(--soft);font-size:1.05rem;margin:0 0 20px;max-width:62ch}.actions{display:flex;gap:10px;flex-wrap:wrap}.screen{padding:14px;display:grid;grid-template-rows:auto 1fr auto;gap:12px}.playerBox{position:relative;border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;background:#000;min-height:320px;display:grid;place-items:center}.playerBox video,.playerBox audio{width:100%;max-height:62svh;background:#000}.playerBox audio{padding:30px}.placeholder{text-align:center;color:var(--soft);padding:26px}.placeholder b{color:var(--green);display:block;font-size:1.5rem}.now{display:flex;justify-content:space-between;gap:10px;color:var(--soft);font-size:.8rem;text-transform:uppercase;letter-spacing:.12em}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.section{padding:20px}.section h2{margin:0 0 12px;text-transform:uppercase;letter-spacing:.06em;font-size:1.5rem}.drop{border:1px dashed rgba(134,255,155,.45);background:rgba(134,255,155,.06);border-radius:20px;padding:22px;text-align:center;transition:.15s}.drop.drag{background:rgba(94,231,255,.12);border-color:var(--creek);transform:scale(.995)}input[type=file]{width:100%;margin-top:14px;color:var(--soft)}input[type=file]::file-selector-button{border:1px solid var(--line);background:#07140d;color:var(--ink);border-radius:999px;padding:10px 12px;text-transform:uppercase;letter-spacing:.08em;margin-right:10px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}label{display:grid;gap:6px;color:var(--soft);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}input,textarea,select{width:100%;border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.35);color:var(--ink);border-radius:14px;padding:11px;font:inherit}textarea{min-height:88px;resize:vertical}.library{display:grid;gap:10px}.item{display:grid;grid-template-columns:58px 1fr auto;gap:12px;align-items:center;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.24);border-radius:18px;padding:10px}.thumb{height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(94,231,255,.24),rgba(134,255,155,.18));display:grid;place-items:center;color:var(--green);font-weight:900}.item b{display:block}.item small{color:var(--soft)}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 10px;color:var(--soft);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}.status{margin-top:12px;color:var(--soft);font-size:.9rem}.admin{margin-top:18px;padding:16px;display:grid;gap:10px}.admin summary{cursor:pointer;color:var(--green);text-transform:uppercase;letter-spacing:.12em}.note{color:var(--soft);font-size:.92rem}.note code{color:var(--gold)}footer{padding:24px 0 10px;text-align:center;color:var(--soft);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}footer a{color:var(--green);text-decoration:none}@media(max-width:780px){.hero,.grid{grid-template-columns:1fr}.top{align-items:flex-start}.nav{max-width:190px}.playerBox{min-height:240px}.meta{grid-template-columns:1fr}.item{grid-template-columns:48px 1fr}.item button{grid-column:1/-1}.wrap{padding:12px}.intro h1{font-size:clamp(2.8rem,18vw,5rem)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top" aria-label="Taylor Crick TV home"><div class="mark">TV</div><div><strong>Taylor Crick TV</strong><span>public creekside uploads</span></div></a>
+    <nav class="nav" aria-label="Main navigation"><a href="#watch">Watch</a><a href="#upload">Upload</a><a href="#library">Library</a><a href="https://bearicide.github.io">Main Site</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="card intro">
+        <div class="kicker">community video + sound drop</div>
+        <h1>Taylor Crick TV</h1>
+        <p>Drop videos, clips, phone footage, MOVs, MP4s, audio sketches, field recordings, and weird little proof-of-life files. This first build previews everything in-browser and is ready for real upload storage later.</p>
+        <div class="actions"><a class="btn" href="#upload">Upload Media</a><a class="btn" href="#library">View Local Library</a></div>
+      </div>
+
+      <section class="card screen" id="watch" aria-label="Media player">
+        <div class="now"><span id="nowTitle">No media loaded</span><span id="nowType">standby</span></div>
+        <div class="playerBox" id="playerBox"><div class="placeholder"><b>TV READY</b><span>Upload or choose a file to start playback.</span></div></div>
+        <div class="now"><span id="nowMeta">Local preview mode</span><span>Taylor Crick</span></div>
+      </section>
+    </section>
+
+    <section class="grid">
+      <section class="card section" id="upload">
+        <h2>Public uploader</h2>
+        <div class="drop" id="drop"><strong>Drag files here</strong><br><span class="note">or choose video/audio files below</span><input id="fileInput" type="file" multiple accept="video/*,audio/*,.mp4,.mov,.m4v,.webm,.ogg,.mp3,.wav,.m4a,.aac"></div>
+        <div class="meta"><label>Uploader name<input id="uploader" placeholder="Name / handle"></label><label>Category<select id="category"><option>Creek TV</option><option>Music / Audio</option><option>Phone Video</option><option>Behind the Scenes</option><option>Other Weirdness</option></select></label></div>
+        <label style="margin-top:10px">Description<textarea id="description" placeholder="What is this clip?"></textarea></label>
+        <div class="status" id="uploadStatus">Supported: MP4, MOV, M4V, WEBM, OGG, MP3, WAV, M4A, AAC. Browser playback depends on device support.</div>
+      </section>
+
+      <section class="card section" id="library">
+        <h2>Local media library</h2>
+        <div class="library" id="libraryList"></div>
+      </section>
+    </section>
+
+    <details class="card admin">
+      <summary>Backend-ready upload notes</summary>
+      <div class="note">Static GitHub Pages cannot permanently accept public uploads by itself. This build keeps files in the visitor browser session with <code>objectURL</code> previews. Later backend targets: Cloudflare R2, Firebase Storage, Supabase Storage, or a small upload API. Hook point: <code>handleFiles(files)</code>.</div>
+      <div class="note">Recommended next step: add moderation queue, file size limit, accepted MIME allowlist, thumbnail generation, and public gallery JSON.</div>
+      <button id="clearLocal" type="button">Clear local library</button>
+    </details>
+  </main>
+
+  <footer>Built for Taylor Crick TV // <a href="https://bearicide.github.io">bearicide.github.io</a></footer>
+</div>
+<script>
+(() => {
+  const state = { items: [] };
+  const $ = id => document.getElementById(id);
+  const fileInput = $('fileInput');
+  const drop = $('drop');
+  const list = $('libraryList');
+  const playerBox = $('playerBox');
+
+  const niceSize = bytes => {
+    if (!bytes) return '0 B';
+    const units = ['B','KB','MB','GB'];
+    const pow = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
+    return `${(bytes / Math.pow(1024, pow)).toFixed(pow ? 1 : 0)} ${units[pow]}`;
+  };
+
+  const safeType = file => {
+    const type = file.type || '';
+    if (type.startsWith('video/')) return 'video';
+    if (type.startsWith('audio/')) return 'audio';
+    const ext = file.name.split('.').pop().toLowerCase();
+    if (['mp4','mov','m4v','webm','ogg'].includes(ext)) return 'video';
+    if (['mp3','wav','m4a','aac','oga'].includes(ext)) return 'audio';
+    return 'unknown';
+  };
+
+  function playItem(id) {
+    const item = state.items.find(x => x.id === id);
+    if (!item) return;
+    playerBox.innerHTML = '';
+    const media = document.createElement(item.kind === 'audio' ? 'audio' : 'video');
+    media.controls = true;
+    media.src = item.url;
+    media.playsInline = true;
+    if (item.kind === 'video') media.poster = '';
+    playerBox.appendChild(media);
+    $('nowTitle').textContent = item.title;
+    $('nowType').textContent = item.kind;
+    $('nowMeta').textContent = `${item.size} • ${item.category}`;
+    media.play().catch(() => {});
+  }
+
+  function render() {
+    if (!state.items.length) {
+      list.innerHTML = '<div class="note">No local uploads yet. Drop something in and it will appear here.</div>';
+      return;
+    }
+    list.innerHTML = state.items.map(item => `
+      <article class="item">
+        <div class="thumb">${item.kind === 'audio' ? '♪' : '▶'}</div>
+        <div><b>${item.title}</b><small>${item.uploader || 'anonymous'} • ${item.size} • ${item.category}</small></div>
+        <button type="button" data-play="${item.id}">Play</button>
+      </article>
+    `).join('');
+    list.querySelectorAll('[data-play]').forEach(btn => btn.addEventListener('click', () => playItem(btn.dataset.play)));
+  }
+
+  function handleFiles(files) {
+    const accepted = [];
+    Array.from(files || []).forEach(file => {
+      const kind = safeType(file);
+      if (kind === 'unknown') return;
+      accepted.push({
+        id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()),
+        file,
+        title: file.name.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' '),
+        kind,
+        url: URL.createObjectURL(file),
+        size: niceSize(file.size),
+        uploader: $('uploader').value.trim(),
+        category: $('category').value,
+        description: $('description').value.trim(),
+        createdAt: new Date().toISOString()
+      });
+    });
+    state.items.unshift(...accepted);
+    $('uploadStatus').textContent = accepted.length ? `${accepted.length} file(s) added to local preview library.` : 'No supported video/audio files found.';
+    render();
+    if (accepted[0]) playItem(accepted[0].id);
+  }
+
+  fileInput.addEventListener('change', e => handleFiles(e.target.files));
+  ['dragenter','dragover'].forEach(type => drop.addEventListener(type, e => { e.preventDefault(); drop.classList.add('drag'); }));
+  ['dragleave','drop'].forEach(type => drop.addEventListener(type, e => { e.preventDefault(); drop.classList.remove('drag'); }));
+  drop.addEventListener('drop', e => handleFiles(e.dataTransfer.files));
+  $('clearLocal').addEventListener('click', () => {
+    state.items.forEach(item => URL.revokeObjectURL(item.url));
+    state.items = [];
+    playerBox.innerHTML = '<div class="placeholder"><b>TV READY</b><span>Upload or choose a file to start playback.</span></div>';
+    $('nowTitle').textContent = 'No media loaded';
+    $('nowType').textContent = 'standby';
+    $('nowMeta').textContent = 'Local preview mode';
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
